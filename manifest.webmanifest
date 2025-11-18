@@ -1,0 +1,20 @@
+{
+  "name": "Izzy's Apps",
+  "short_name": "izzy2lost",
+  "description": "Retro vibes meet modern tech. Apps, ports, and emulators.",
+  "icons": [
+    {
+      "src": "/assets/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone"
+}
