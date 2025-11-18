@@ -8,6 +8,15 @@
   }
 }
 
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.95;
+  }
+}
+
 /* Base Styles - Mobile First */
 * {
   box-sizing: border-box;
@@ -34,7 +43,7 @@ body {
   right: 12px;
   z-index: 20;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   background: rgba(0, 0, 0, 0.5);
   padding: 8px 12px;
   border-radius: 8px;
@@ -44,29 +53,90 @@ body {
 .crt-toggle label {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   cursor: pointer;
+  user-select: none;
 }
 
+/* Hide default checkbox */
 .crt-toggle input {
+  position: absolute;
+  opacity: 0;
   cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+/* Custom CRT TV checkbox using image */
+.crt-toggle label span:first-of-type {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  flex-shrink: 0;
+  background-image: url('assets/crt.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+/* Blue screen glow behind when checked */
+.crt-toggle label span:first-of-type:before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  background: radial-gradient(circle at center, rgba(0, 227, 255, 0) 0%, rgba(0, 227, 255, 0) 100%);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.crt-toggle input:checked + span:before {
+  background: radial-gradient(circle at center, rgba(0, 227, 255, 0.9) 0%, rgba(0, 227, 255, 0.6) 40%, rgba(0, 227, 255, 0) 70%);
+  box-shadow: 0 0 10px rgba(0, 227, 255, 0.5);
 }
 
 .crt-on {
   position: relative;
+  animation: flicker 0.15s infinite;
 }
 
+/* Scanlines */
 .crt-on:after {
   content: "";
   pointer-events: none;
   position: fixed;
   inset: 0;
   background: repeating-linear-gradient(
-    transparent,
-    transparent 2px,
-    rgba(255, 255, 255, 0.04) 3px
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
   );
   z-index: 10;
+}
+
+/* Screen curvature and vignette */
+.crt-on:before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  z-index: 10;
+}
+
+/* RGB shift effect on text */
+.crt-on * {
+  text-shadow: 
+    0.5px 0 0 rgba(255, 0, 0, 0.3),
+    -0.5px 0 0 rgba(0, 255, 255, 0.3);
 }
 
 /* Navbar */
@@ -87,6 +157,7 @@ body {
   width: 40px;
   height: 40px;
   object-fit: contain;
+  border-radius: 28%;
 }
 
 .logo-text {
@@ -123,7 +194,12 @@ body {
 .hero-inner p {
   font-size: 16px;
   margin: 0;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ff2a9d;
+  text-shadow: 
+    0 0 10px rgba(255, 42, 157, 0.8),
+    0 0 20px rgba(255, 42, 157, 0.6),
+    0 0 30px rgba(255, 42, 157, 0.4);
+  font-weight: 500;
 }
 
 /* Projects Section */
@@ -173,6 +249,7 @@ body {
   width: 64px;
   height: 64px;
   object-fit: contain;
+  border-radius: 28%;
   filter: drop-shadow(0 0 10px rgba(0, 227, 255, 0.4));
   animation: neonPulse 3s ease-in-out infinite;
 }
@@ -232,6 +309,7 @@ body {
   display: block;
   margin: 0 auto 24px;
   object-fit: contain;
+  border-radius: 28%;
   filter: drop-shadow(0 0 20px rgba(0, 227, 255, 0.4));
   animation: neonPulse 3s ease-in-out infinite;
 }
