@@ -295,6 +295,31 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
+/* Badge Buttons */
+.btn-badge {
+  display: inline-block;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-badge img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.btn-badge:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* GitHub Logo Button */
+.btn-badge.github-logo img {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+
 /* Project Detail Pages */
 .project-page {
   max-width: 600px;
