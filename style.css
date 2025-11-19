@@ -489,35 +489,16 @@ body {
 }
 
 /* Email Icon */
-.email-icon {
+.email-icon-simple {
   display: inline-block;
   text-decoration: none;
-  color: #ff2a9d;
-  border: 2px solid #ff2a9d;
-  background: transparent;
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-size: 16px;
   transition: all 0.3s ease;
-  text-shadow: 
-    0 0 10px rgba(255, 42, 157, 0.8),
-    0 0 20px rgba(255, 42, 157, 0.6);
-  box-shadow: 
-    0 0 10px rgba(255, 42, 157, 0.4),
-    inset 0 0 10px rgba(255, 42, 157, 0.1);
+  margin-left: 4px;
 }
 
-.email-icon:hover {
-  color: #ff2a9d;
-  border-color: #ff2a9d;
-  background: rgba(255, 42, 157, 0.1);
-  text-shadow: 
-    0 0 15px rgba(255, 42, 157, 1),
-    0 0 30px rgba(255, 42, 157, 0.8);
-  box-shadow: 
-    0 0 20px rgba(255, 42, 157, 0.6),
-    inset 0 0 15px rgba(255, 42, 157, 0.2);
-  transform: scale(1.05);
+.email-icon-simple:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
 }
 
 /* Desktop Styles */
