@@ -25,19 +25,19 @@
 <main class="project-page">
   <img src="assets/psx2.svg" class="project-icon-large">
   <h1>PSX2</h1>
-  <p class="subtitle">PlayStation 2 Emulator for Mobile</p>
+  <p class="subtitle">PlayStation 2 Emulator for Android</p>
 
   <div class="description">
-    <p>PSX2 is a powerful PlayStation 2 emulator that brings your favorite PS2 games to mobile devices. Experience classic gaming with enhanced performance and modern convenience.</p>
-    <p>Built on the legendary PCSX2 emulator and optimized for ARM64 Android devices, PSX2 delivers high compatibility and smooth gameplay.</p>
+    <p>PSX2 is a high-performance PlayStation 2 emulator for Android devices, bringing your favorite PS2 games to mobile platforms with enhanced graphics and modern features. Experience authentic retro gaming on the go.</p>
+    <p>PSX2 is an Android port of the renowned <a href="https://github.com/PCSX2/pcsx2" target="_blank" rel="noopener noreferrer">PCSX2</a> emulator, specifically forked from <a href="https://github.com/pontos2024/PCSX2_ARM64" target="_blank" rel="noopener noreferrer">PCSX2_ARM64</a> to provide optimized performance on ARM64 Android devices.</p>
   </div>
 
   <div class="features">
     <h2>Key Features</h2>
     <ul>
-      <li><strong>High Compatibility</strong> - Play thousands of PS2 games</li>
+      <li><strong>High Compatibility</strong> - Play thousands of PlayStation 2 games</li>
       <li><strong>Enhanced Graphics</strong> - Upscaling, texture filtering, and modern rendering</li>
-      <li><strong>Multiple Formats</strong> - ISO, CHD, CSO, ZSO, and compressed formats</li>
+      <li><strong>Multiple Formats</strong> - Support for ISO, CHD, CSO, ZSO, and compressed formats</li>
       <li><strong>Touch Controls</strong> - Intuitive on-screen gamepad with customizable layout</li>
       <li><strong>External Controllers</strong> - Full support for Bluetooth and USB gamepads</li>
       <li><strong>Save States</strong> - Quick save and load functionality</li>
@@ -46,10 +46,87 @@
     </ul>
   </div>
 
+  <div class="features">
+    <h2>Requirements</h2>
+    <ul>
+      <li><strong>Android 8.0</strong> (API level 26) or higher</li>
+      <li><strong>ARM64 device</strong> (64-bit processor required)</li>
+      <li><strong>4GB RAM</strong> minimum (8GB+ recommended)</li>
+      <li><strong>OpenGL ES 3.2</strong> or Vulkan support</li>
+      <li><strong>Storage space</strong> for games and BIOS files</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Installation</h2>
+    <h3>Option 1: Google Play Store (Recommended)</h3>
+    <p>Download PSX2 directly from the Google Play Store for automatic updates and easy installation.</p>
+    <div class="project-links">
+      <a href="https://play.google.com/store/apps/details?id=com.izzy2lost.psx2&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="btn-badge google-play">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+      </a>
+    </div>
+    
+    <h3>Option 2: Build from Source (Free)</h3>
+    <p>For users who prefer to build from source, follow the build instructions on GitHub.</p>
+    <p><strong>Note:</strong> Paid users get convenient automatic updates through the Play Store, while free users can build from source using the instructions provided.</p>
+  </div>
+
+  <div class="features">
+    <h2>Setup Guide</h2>
+    <h3>1. BIOS Files</h3>
+    <p>PSX2 requires PlayStation 2 BIOS files to function:</p>
+    <ul>
+      <li><strong>Required:</strong> PS2 BIOS files (not included)</li>
+      <li><strong>Location:</strong> Follow the setup wizard to import BIOS</li>
+      <li><strong>Supported:</strong> All official PS2 BIOS versions</li>
+      <li><strong>Legal:</strong> You must own a PlayStation 2 console to legally use BIOS files</li>
+    </ul>
+
+    <h3>2. Game Files</h3>
+    <p>Supported game formats:</p>
+    <ul>
+      <li><strong>ISO</strong> - Standard disc images</li>
+      <li><strong>CHD</strong> - Compressed Hunks of Data</li>
+      <li><strong>CSO/ZSO</strong> - Compressed ISO formats</li>
+      <li><strong>BIN/CUE</strong> - Binary disc images</li>
+      <li><strong>IMG/MDF/NRG</strong> - Various disc formats</li>
+    </ul>
+
+    <h3>3. First Launch</h3>
+    <ol>
+      <li>Run PSX2 and complete the setup wizard</li>
+      <li>Pick your data/user folder</li>
+      <li>Choose your games directory</li>
+      <li>Select your BIOS folder</li>
+      <li>Start playing!</li>
+    </ol>
+  </div>
+
+  <div class="features">
+    <h2>Configuration</h2>
+    <h3>Graphics Settings</h3>
+    <ul>
+      <li><strong>Renderer:</strong> Auto, Vulkan, OpenGL, Software</li>
+      <li><strong>Resolution:</strong> 1x to 8x native scaling</li>
+      <li><strong>Aspect Ratio:</strong> Multiple options including widescreen</li>
+    </ul>
+    <h3>Game-Specific Settings</h3>
+    <p>Each game can have individual settings for optimal compatibility and performance.</p>
+  </div>
+
+  <div class="features">
+    <h2>Legal Information</h2>
+    <h3>Important Disclaimers</h3>
+    <ul>
+      <li><strong>No Games Included:</strong> PSX2 does not include any copyrighted games</li>
+      <li><strong>No BIOS Included:</strong> PlayStation 2 BIOS files are not provided</li>
+      <li><strong>Legal Requirements:</strong> Users must own original games and console</li>
+      <li><strong>Educational Purpose:</strong> This emulator is for educational and preservation purposes</li>
+    </ul>
+  </div>
+
   <div class="project-links">
-    <a href="https://play.google.com/store/apps/details?id=com.izzy2lost.psx2" target="_blank" rel="noopener noreferrer" class="btn-badge google-play">
-      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
-    </a>
     <a href="https://github.com/izzy2lost/PSX2" target="_blank" rel="noopener noreferrer" class="btn-badge github-logo">
       <img src="assets/GitHub_Lockup_Light.svg" alt="View on GitHub">
     </a>
@@ -63,6 +140,7 @@
   <footer class="project-footer">
     <p>© 2025 PSX2. Licensed under GPL-3.0.</p>
     <p class="disclaimer">No games or BIOS files are included with this emulator. PSX2 is not affiliated with or endorsed by Sony Interactive Entertainment. PlayStation and PlayStation 2 are trademarks of Sony Interactive Entertainment.</p>
+    <p style="margin-top: 1rem;"><strong>Acknowledgments:</strong> Special thanks to the PCSX2 Team, PCSX2_ARM64 Contributors, Android Community, and Open Source Contributors.</p>
   </footer>
 </main>
 
