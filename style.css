@@ -314,6 +314,18 @@ body {
 }
 
 /* GitHub Logo Button */
+.btn-badge.github-logo {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.btn-badge.github-logo:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .btn-badge.github-logo img {
   height: 26px;
   width: auto;
