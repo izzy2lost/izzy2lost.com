@@ -316,7 +316,7 @@ body {
 /* GitHub Logo Button */
 .btn-badge.github-logo {
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 12px 20px;
   background: rgba(0, 0, 0, 0.2);
 }
