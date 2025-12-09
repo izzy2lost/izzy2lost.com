@@ -25,13 +25,57 @@
 <main class="project-page">
   <img src="assets/chdboy.svg" class="project-icon-large">
   <h1>CHDBOY</h1>
-  <p>CHD utility tools.</p>
+  <p>CHDBOY is an Android port of the CHDMAN tool that converts disc images (BIN/CUE, ISO, etc.) into compressed CHD archives. CHD (Compressed Hunks of Data) is a lossless compression format that efficiently combines multiple files into a single compressed archive, significantly reducing storage requirements while preserving perfect quality of the original media. This app provides a mobile-friendly solution for compressing your game backups, saving valuable space on your device without any loss of data.</p>
 
   <div class="project-links">
     <a href="https://github.com/izzy2lost/CHDBOY" target="_blank" rel="noopener noreferrer" class="btn-badge github-logo">
       <img src="assets/GitHub_Lockup_Light.svg" alt="View on GitHub">
     </a>
   </div>
+
+  <section class="release-section">
+    <div class="highlight-box">
+      <strong>Status:</strong> Google Play submission candidate. The app is currently free. If you enjoy it, please consider supporting future releases when they arrive on the Play Store.
+    </div>
+
+    <h2>Highlights</h2>
+    <ul>
+      <li><strong>Smart mode detection:</strong> Automatically picks createcd or createdvd based on your source so you never guess the right command.</li>
+      <li><strong>PSP-aware compression:</strong> Uses the recommended hunk size for PSP ISOs to keep conversions compatible and efficient.</li>
+      <li><strong>Duplicate CHD protection:</strong> Existing CHDs with matching names are skipped to save time.</li>
+      <li><strong>Background-friendly:</strong> Accept notification permissions so conversions can finish even when the app is closed.</li>
+      <li><strong>Lossless space savings:</strong> CHD shrinks multi-file disc images into a single lossless archive.</li>
+    </ul>
+
+    <h2>Getting Started</h2>
+    <ol>
+      <li>Install the APK or build from source (see below).</li>
+      <li>Use the Android Storage Access Framework picker to select the folder that contains your BIN/CUE/ISO files (no legacy storage permission required).</li>
+      <li>Confirm the files you want to convert.</li>
+      <li>Wait for the notification when compression finishes. Large ISOs can take a while, so let the app run in the background or rely on notifications.</li>
+    </ol>
+
+    <h2>Building from Source</h2>
+    <pre><code>./gradlew assembleRelease</code></pre>
+    <p>Artifacts will appear in <code>app/build/outputs/apk/</code>.</p>
+
+    <h2>Documentation & Policies</h2>
+    <ul>
+      <li>Project Website & Privacy Policy</li>
+      <li>GitHub Issues</li>
+    </ul>
+
+    <h2>Attribution</h2>
+    <ul>
+      <li>Forked from Pipetto-crypto/Chdman</li>
+      <li>Powered by CHDMAN, part of the MAME project</li>
+    </ul>
+
+    <h2>License</h2>
+    <p>This project is released under the terms of the GNU General Public License v2. See the LICENSE file for full details, including the upstream MAME and CHDMAN licenses.</p>
+    <p>CHDBOY includes or interfaces with code from MAME ((c) MAMEdev). Refer to the upstream repositories for additional notices and acknowledgments.</p>
+    <p>(c) 2025 izzy2lost. Consider supporting future CHDBOY releases on Google Play.</p>
+  </section>
 </main>
 
 <script src="script.js"></script>
