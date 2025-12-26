@@ -207,6 +207,79 @@ body {
   padding: 20px 16px 40px;
 }
 
+.featured-row {
+  display: flex;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto 16px;
+  align-items: stretch;
+}
+
+.featured-card {
+  flex: 1;
+  min-height: 0;
+  justify-content: flex-start;
+  gap: 14px;
+}
+
+.featured-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+.featured-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.featured-card h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.featured-kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ff2a9d;
+  text-shadow:
+    0 0 10px rgba(255, 42, 157, 0.6),
+    0 0 20px rgba(255, 42, 157, 0.4);
+}
+
+.email-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.gmail-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -252,6 +325,20 @@ body {
   border-radius: 28%;
   filter: drop-shadow(0 0 10px rgba(0, 227, 255, 0.4));
   animation: neonPulse 3s ease-in-out infinite;
+}
+
+.project-page .coming-soon {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 0 auto 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 227, 255, 0.5);
+  background: rgba(0, 227, 255, 0.08);
+  color: #00e3ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .project-card h3 {
@@ -423,6 +510,10 @@ body {
     padding: 30px 24px 60px;
   }
 
+  .featured-row {
+    margin-bottom: 20px;
+  }
+
   .project-grid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 20px;
@@ -469,6 +560,16 @@ body {
 
   .back {
     font-size: 17px;
+  }
+}
+
+@media (max-width: 420px) {
+  .featured-row {
+    flex-direction: column;
+  }
+
+  .email-cta {
+    width: 100%;
   }
 }
 

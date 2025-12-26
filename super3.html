@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUPER3 Aú izzy2lost</title>
+<meta name="description" content="SUPER3 is an open-source Sega Model 3 emulator for Android. Coming soon.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-off">
+<canvas id="starfield"></canvas>
+
+<div class="crt-toggle">
+  <label>
+    <input type="checkbox" id="crtSwitch">
+    <span></span>
+    <span>CRT Mode</span>
+  </label>
+</div>
+
+<header class="navbar">
+  <a href="index.html" class="back">&#10094; Back</a>
+</header>
+
+<main class="project-page">
+  <img src="assets/super3.svg" class="project-icon-large" alt="SUPER3 icon">
+  <h1>SUPER3</h1>
+  <p class="subtitle">Open-source Sega Model 3 emulator for Android</p>
+  <div class="coming-soon">Coming soon</div>
+
+  <div class="description">
+    <p>SUPER3 is an open-source Sega Model 3 emulator for Android. It is based on the <a href="https://github.com/trzy/Supermodel" target="_blank" rel="noopener noreferrer">Supermodel</a> emulator by trzy, with additional work derived from the <a href="https://github.com/DirtBagXon/model3emu-code-sinden/tree/arm" target="_blank" rel="noopener noreferrer">model3emu-code-sinden (ARM)</a> fork.</p>
+    <p><strong>No games are included.</strong> This app does not include any games, ROMs, BIOS files, or copyrighted game content. You must supply your own legally obtained game ROMs.</p>
+  </div>
+
+  <div class="features">
+    <h2>Features</h2>
+    <ul>
+      <li><strong>Sega Model 3 emulation</strong> (compatibility varies by title/device)</li>
+      <li><strong>On-screen touch controls</strong> (Service/Test/Coin/Start and game-specific controls)</li>
+      <li><strong>Virtual on-screen steering wheel</strong> for driving games (when supported)</li>
+      <li><strong>Save states</strong> (10 slots) with automatic screenshot thumbnails and tap-to-preview</li>
+      <li><strong>In-game pause/resume</strong> button</li>
+      <li><strong>Game flyers</strong> (front/back) in the launcher list</li>
+      <li><strong>Video settings</strong> (Resolution &amp; Widescreen)</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Video Settings</h2>
+    <p>From the main game list, open the side menu (toolbar “menu” icon) and look under <strong>Video</strong>.</p>
+    <ul>
+      <li><strong>Resolution:</strong> Native (496x384) and integer scale options (2x through 8x). Higher values look sharper but can reduce performance.</li>
+      <li><strong>Match device resolution:</strong> Sets the internal resolution to your device’s exact pixel resolution (landscape). This also enables Widescreen and Wide background.</li>
+      <li><strong>Widescreen:</strong> Expands the horizontal field of view (Supermodel <code>-wide-screen</code>). At very wide aspect ratios some games may cull objects at the edges.</li>
+      <li><strong>Wide background:</strong> Stretches the 2D background layers when using widescreen (Supermodel <code>-wide-bg</code>).</li>
+      <li><strong>Enhanced Real3D (experimental):</strong> Enables more desktop-like Real3D rendering (multi-pass transparency compositing + scroll fog). This can improve visuals in some games/areas, but may reduce performance on lower-end devices.</li>
+    </ul>
+    <p>These settings are written to <code>.../Android/data/&lt;package&gt;/files/super3/Config/Supermodel.ini</code> (<code>XResolution</code>, <code>YResolution</code>, <code>WideScreen</code>, <code>WideBackground</code>, <code>New3DAccurate</code>).</p>
+  </div>
+
+  <div class="features">
+    <h2>Files &amp; Storage</h2>
+    <ul>
+      <li><strong>Save states &amp; thumbnails:</strong> Stored under <code>.../Android/data/&lt;package&gt;/files/super3/Saves/</code></li>
+      <li><strong>Optional sync/export:</strong> May use Android’s Storage Access Framework; if enabled, the app only accesses folder(s) you explicitly choose.</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Flyers</h2>
+    <p>Flyers are downloaded on-demand (when you switch to Flyer view) from <a href="https://github.com/izzy2lost/Model3flyers" target="_blank" rel="noopener noreferrer">https://github.com/izzy2lost/Model3flyers</a>.</p>
+    <p>They are stored in <code>.../Android/data/&lt;package&gt;/files/super3/Flyers/</code> as <code>&lt;game&gt;_front.png</code> and <code>&lt;game&gt;_back.png</code>. You can replace or add files in that folder to customize artwork.</p>
+  </div>
+
+  <div class="features">
+    <h2>Legal / Google Play Policy Notes</h2>
+    <ul>
+      <li><strong>No games included:</strong> SUPER3 does not ship with ROMs or game data, and it is not intended to facilitate piracy.</li>
+      <li><strong>You must own the games:</strong> Only use ROMs you are legally permitted to use in your region.</li>
+      <li><strong>Trademarks:</strong> “SEGA” and all associated game names, trademarks, and copyrighted works are the property of their respective owners.</li>
+      <li><strong>Not affiliated:</strong> This project is not affiliated with or endorsed by SEGA or any arcade hardware manufacturer.</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Privacy</h2>
+    <ul>
+      <li>SUPER3 can run offline for emulation, but Flyer view may download artwork from GitHub.</li>
+      <li>The app stores emulator settings, save states, and screenshots locally on your device.</li>
+      <li>If you opt into selecting a user folder for syncing/export, access is limited to the folder you select via the system file picker.</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Upstream / Credits</h2>
+    <ul>
+      <li><strong>Supermodel (upstream):</strong> <a href="https://github.com/trzy/Supermodel" target="_blank" rel="noopener noreferrer">https://github.com/trzy/Supermodel</a></li>
+      <li><strong>Model3Emu fork reference (ARM):</strong> <a href="https://github.com/DirtBagXon/model3emu-code-sinden/tree/arm" target="_blank" rel="noopener noreferrer">https://github.com/DirtBagXon/model3emu-code-sinden/tree/arm</a></li>
+      <li><strong>SDL2:</strong> Used for the Android shell and input/audio/video integration</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>License</h2>
+    <p>This project is licensed under the GNU GPL v3.0 (see <code>LICENSE</code>). If you distribute builds (including on Google Play), GPL requires providing the corresponding source code to recipients.</p>
+    <div class="project-links">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener noreferrer" class="btn btn-neon-pink">View License (GPL-3.0)</a>
+      <a href="super3-privacy.html" class="btn btn-neon-pink">Privacy Policy</a>
+    </div>
+  </div>
+
+  <footer class="project-footer">
+    <p>Ac 2025 SUPER3. Licensed under GPL-3.0.</p>
+    <p class="disclaimer">No games, ROMs, BIOS files, or copyrighted content are included. SUPER3 is not affiliated with or endorsed by SEGA.</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+<script src="starfield.js"></script>
+</body>
+</html>
