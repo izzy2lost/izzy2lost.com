@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>X1 BOX · izzy2lost</title>
+<meta name="description" content="X1 BOX is an original Xbox emulator for Android, based on xemu.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-off">
+<canvas id="starfield"></canvas>
+
+<div class="crt-toggle">
+  <label>
+    <input type="checkbox" id="crtSwitch">
+    <span></span>
+    <span>CRT Mode</span>
+  </label>
+</div>
+
+<header class="navbar">
+  <a href="index.html" class="back">&#10094; Back</a>
+</header>
+
+<main class="project-page">
+  <img src="assets/x1box.svg" class="project-icon-large" alt="X1 BOX icon">
+  <h1>X1 BOX</h1>
+  <p class="subtitle">Original Xbox emulator for Android</p>
+  <div class="coming-soon">Coming soon</div>
+
+  <div class="project-links">
+    <a href="mailto:izzynochill@gmail.com" class="email-cta">
+      <img src="assets/Gmail_icon_(2020).svg" class="gmail-icon" alt="Gmail">
+      <span>Testers needed</span>
+    </a>
+  </div>
+
+  <div class="description">
+    <p>X1 BOX is an original Xbox emulator for Android, based on xemu.</p>
+  </div>
+
+  <div class="features">
+    <h2>Important</h2>
+    <p>X1 BOX is resource-heavy. A device with <strong>8 GB RAM or more is recommended</strong>.</p>
+    <p>Lower-end devices may run poorly or fail to run games correctly. <strong>Vulkan support is required.</strong></p>
+  </div>
+
+  <div class="features">
+    <h2>Project Origin</h2>
+    <ul>
+      <li>This project is forked from: <a href="https://github.com/xemu-project/xemu" target="_blank" rel="noopener noreferrer">https://github.com/xemu-project/xemu</a></li>
+      <li>Upstream xemu project: <a href="https://xemu.app" target="_blank" rel="noopener noreferrer">https://xemu.app</a></li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>What It Does</h2>
+    <p>X1 BOX packages xemu for Android with an Android-first flow and launcher UI.</p>
+  </div>
+
+  <div class="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Setup wizard to configure required Xbox files</li>
+      <li>Game library browser with list and cover-grid views</li>
+      <li>Optional online box-art lookup in the game library</li>
+      <li>On-screen virtual Xbox controller for touch devices</li>
+      <li>Automatic hide/show of on-screen controls when a physical controller is connected</li>
+      <li>Support for physical USB/Bluetooth game controllers</li>
+      <li>ARM64 (<code>arm64-v8a</code>) Android target</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Device Requirements</h2>
+    <ul>
+      <li>Android 8.0+ (API 26 or newer)</li>
+      <li>64-bit ARM device (<code>arm64-v8a</code>)</li>
+      <li>Vulkan-capable GPU/device</li>
+      <li>Recommended: 8 GB RAM or higher for better stability and performance</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Setup Requirements (User Files)</h2>
+    <p>To use the emulator, you must provide your own legally obtained original Xbox files, such as:</p>
+    <ul>
+      <li>MCPX Boot ROM</li>
+      <li>Flash ROM / BIOS</li>
+      <li>Xbox hard disk image</li>
+      <li>Game files/images from your own discs</li>
+    </ul>
+    <p>X1 BOX does not include copyrighted BIOS or game content.</p>
+  </div>
+
+  <div class="features">
+    <h2>License</h2>
+    <p>This project inherits xemu/QEMU licensing:</p>
+    <ul>
+      <li>Emulator code is primarily under <strong>GNU GPL v2</strong></li>
+      <li>Some components are under other GPLv2-compatible licenses (for example BSD/MIT in parts of TCG)</li>
+    </ul>
+    <p>Source code is available at the GitHub link below.</p>
+    <div class="project-links">
+      <a href="https://github.com/izzy2lost/xemu" target="_blank" rel="noopener noreferrer" class="btn-badge github-logo">
+        <img src="assets/GitHub_Lockup_Light.svg" alt="Source code on GitHub">
+      </a>
+    </div>
+    <p>See these files for details:</p>
+    <ul>
+      <li><a href="https://github.com/izzy2lost/xemu/blob/master/LICENSE" target="_blank" rel="noopener noreferrer"><code>LICENSE</code></a></li>
+      <li><a href="https://github.com/izzy2lost/xemu/blob/master/COPYING" target="_blank" rel="noopener noreferrer"><code>COPYING</code></a></li>
+      <li><a href="https://github.com/izzy2lost/xemu/blob/master/COPYING.LIB" target="_blank" rel="noopener noreferrer"><code>COPYING.LIB</code></a></li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Notes</h2>
+    <ul>
+      <li>X1 BOX is not affiliated with Microsoft.</li>
+      <li>Compatibility and performance vary by device and game.</li>
+    </ul>
+  </div>
+
+  <div class="project-links">
+    <a href="x1box-privacy.html" class="btn btn-neon-pink">Privacy Policy</a>
+    <a href="https://github.com/xemu-project/xemu" target="_blank" rel="noopener noreferrer" class="btn btn-neon-pink">Upstream xemu</a>
+  </div>
+
+  <footer class="project-footer">
+    <p>(c) 2026 X1 BOX.</p>
+    <p class="disclaimer">No BIOS or game content is included. X1 BOX is not affiliated with Microsoft.</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+<script src="starfield.js"></script>
+</body>
+</html>
