@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nin64 · izzy2lost</title>
+<meta name="description" content="Nin64 is a Nintendo 64 emulator for Android, powered by Mupen64Plus-Next.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-off">
+<canvas id="starfield"></canvas>
+
+<div class="crt-toggle">
+  <label>
+    <input type="checkbox" id="crtSwitch">
+    <span></span>
+    <span>CRT Mode</span>
+  </label>
+</div>
+
+<header class="navbar">
+  <a href="index.html" class="back">&#10094; Back</a>
+</header>
+
+<main class="project-page">
+  <img src="assets/nin64.svg" class="project-icon-large" alt="Nin64 icon">
+  <h1>Nin64</h1>
+  <p class="subtitle">Nintendo 64 emulator for Android</p>
+  <div class="coming-soon">Coming soon</div>
+
+  <div class="description">
+    <p>Nin64 is a Nintendo 64 emulator for Android powered by the Mupen64Plus-Next libretro core with GLideN64 hardware rendering.</p>
+  </div>
+
+  <div class="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Mupen64Plus-Next libretro core with GLideN64 renderer</li>
+      <li>Hardware-accelerated graphics via OpenGL ES 3.0</li>
+      <li>Resolution scaling up to 8x native for a sharper image</li>
+      <li>Texture pack support — load custom high-resolution texture packs</li>
+      <li>Cheat manager — browse and toggle per-game cheats (GameShark / Action Replay)</li>
+      <li>Configurable touch controls — reposition, resize, and remap the on-screen layout</li>
+      <li>Physical controller remapping — fully remap USB and Bluetooth controller buttons and sticks</li>
+      <li>Game library browser — scan and launch ROMs from local storage</li>
+      <li>Save states — save and restore progress at any point</li>
+      <li>In-game save support (SRAM, FlashRAM, EEPROM, MemPak)</li>
+      <li>Low-latency audio via Google Oboe</li>
+      <li>ARM64 and x86_64 ABI support</li>
+      <li>Free to play with ads — remove ads with a one-time in-app purchase</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Coming Soon</h2>
+    <ul>
+      <li>Cloud save sync</li>
+      <li>Online multiplayer</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Device Requirements</h2>
+    <ul>
+      <li>Android 8.0+ (API 26 or newer)</li>
+      <li>ARM64 (arm64-v8a) or x86_64 device</li>
+      <li>OpenGL ES 3.0 capable GPU</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>License</h2>
+    <p>Nin64 inherits the license of its emulation core:</p>
+    <ul>
+      <li>Emulator code is under <strong>GNU GPL v2</strong> (Mupen64Plus / Mupen64Plus-Next)</li>
+      <li>Some components are under other GPL-compatible licenses</li>
+    </ul>
+    <div class="project-links">
+      <a href="https://github.com/izzy2lost/Nin64" target="_blank" rel="noopener noreferrer"
+         class="btn-badge github-logo">
+        <img src="assets/GitHub_Lockup_Light.svg" alt="Source code on GitHub">
+      </a>
+    </div>
+  </div>
+
+  <div class="project-links">
+    <a href="nin64-privacy.html" class="btn btn-neon-pink">Privacy Policy</a>
+    <a href="https://github.com/libretro/mupen64plus-libretro-nx" target="_blank" rel="noopener noreferrer"
+       class="btn btn-neon-pink">Upstream Mupen64Plus-Next</a>
+  </div>
+
+  <footer class="project-footer">
+    <p>(c) 2026 Nin64.</p>
+    <p class="disclaimer">No ROM files or game content are included. Nin64 is not affiliated with Nintendo.</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+<script src="starfield.js"></script>
+</body>
+</html>
