@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - NES HD</title>
+<meta name="description" content="Privacy Policy for the NES HD Android application.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-off">
+<canvas id="starfield"></canvas>
+
+<div class="crt-toggle">
+  <label>
+    <input type="checkbox" id="crtSwitch">
+    <span></span>
+    <span>CRT Mode</span>
+  </label>
+</div>
+
+<header class="navbar">
+  <a href="neshd.html" class="back">&#10094; Back</a>
+</header>
+
+<main class="project-page">
+  <h1>Privacy Policy for NES HD</h1>
+  <p class="subtitle">Last updated: July 16, 2026</p>
+
+  <div class="description">
+    <h2>Introduction</h2>
+    <p>NES HD ("we," "our," or "us") is an Android application for NES and Famicom emulation powered by the Mesen emulation core (the "Service"). This Privacy Policy explains what information the Service accesses, stores, and shares.</p>
+
+    <h2>Information We Do Not Collect</h2>
+    <p>NES HD is designed to run locally on your device. We do not operate an account or analytics service, and we do not intentionally collect:</p>
+    <ul>
+      <li>Names, email addresses, or other personal identification information</li>
+      <li>Contact lists or precise location data</li>
+      <li>Advertising identifiers</li>
+      <li>Usage analytics, telemetry, or device identifiers for profiling</li>
+      <li>Your ROMs, BIOS files, save data, or emulator state</li>
+    </ul>
+
+    <h2>Information Stored or Accessed Locally</h2>
+    <p>To provide emulator functionality, NES HD may store or access the following on your device:</p>
+    <ul>
+      <li>App preferences, emulator settings, themes, and controller configuration</li>
+      <li>Game library metadata, including game names and file locations</li>
+      <li>Game files and folders you explicitly choose through Android file-selection flows</li>
+      <li>An FDS BIOS file you explicitly select</li>
+      <li>Save states, preview images, battery-backed saves, and per-game cheat selections</li>
+      <li>High-resolution texture packs and downloaded cover art</li>
+    </ul>
+
+    <h2>Permissions and File Access</h2>
+    <p>NES HD uses Android system file-selection mechanisms so you can open a game or select a ROM folder, FDS BIOS, or texture pack. On Android 12 and earlier, the app may request read access to shared storage so it can find and open game files. On newer Android versions, access is governed by the files and folders you select. NES HD does not upload your selected game or BIOS files.</p>
+
+    <h2>Network Use and Third-Party Services</h2>
+    <p>Core emulation works locally. NES HD may use internet access to download game cover artwork from repositories hosted on GitHub when your library is displayed. The requested artwork path can identify a game title or region. GitHub may also receive standard connection information such as your IP address and user agent. Review <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub's Privacy Statement</a> for details.</p>
+    <p>The app does not send ROM files, BIOS files, save data, cheat selections, or emulator state to the cover-art service.</p>
+
+    <h2>Data Sharing and Sale</h2>
+    <p>We do not sell or share your personal data. NES HD does not operate a remote account or cloud-save backend. Standard network information is processed by GitHub only when it serves optional cover-art files, as described above.</p>
+
+    <h2>Data Retention and Deletion</h2>
+    <p>App data and cached artwork are stored locally on your device. You can remove them by clearing NES HD's storage or uninstalling the app through Android system settings. Files you placed outside the app's private storage may need to be deleted separately using your device's file manager.</p>
+
+    <h2>Device Backups</h2>
+    <p>Depending on your Android device and backup settings, Android may include eligible NES HD app data in a system backup managed by your device or backup provider. You can manage or disable device backups in Android settings. NES HD does not operate its own backup or cloud-sync service.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>The Service is not directed to children under 13, and we do not knowingly collect personal information from children under 13.</p>
+
+    <h2>Security</h2>
+    <p>Because NES HD primarily stores data locally, its security depends on your device and the storage locations you select. Keep your device updated, use its available security features, and only install texture packs and game files from sources you trust.</p>
+
+    <h2>No Games Included / Legal Notice</h2>
+    <p>NES HD does not include games, ROM files, BIOS files, or commercial artwork. Only use content you are legally permitted to use. NES HD is not affiliated with or endorsed by Nintendo.</p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page and reflected in the "Last updated" date.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions or requests, email <a href="mailto:izzynochill@gmail.com">izzynochill@gmail.com</a> <a href="mailto:izzynochill@gmail.com?subject=NES%20HD%20Privacy" class="email-icon-simple" aria-label="Email about NES HD privacy"><img src="assets/Gmail_icon_(2020).svg" alt="" style="width: 20px; height: 20px; vertical-align: middle;"></a>.</p>
+
+    <p class="disclaimer">This privacy policy is provided to support Google Play policy requirements.</p>
+  </div>
+</main>
+
+<script src="script.js"></script>
+<script src="starfield.js"></script>
+</body>
+</html>

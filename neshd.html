@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NES HD · izzy2lost</title>
+<meta name="description" content="NES HD is an NES emulator for Android powered by Mesen, with support for high-resolution texture packs. Testers needed.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-off">
+<canvas id="starfield"></canvas>
+
+<div class="crt-toggle">
+  <label>
+    <input type="checkbox" id="crtSwitch">
+    <span></span>
+    <span>CRT Mode</span>
+  </label>
+</div>
+
+<header class="navbar">
+  <a href="index.html" class="back">&#10094; Back</a>
+</header>
+
+<main class="project-page">
+  <img src="assets/neshd.svg" class="project-icon-large" alt="NES HD icon">
+  <h1>NES HD</h1>
+  <p class="subtitle">NES emulator for Android, powered by Mesen</p>
+  <div class="coming-soon">Testers needed</div>
+  <p class="testers-needed">Want to help test NES HD on your Android device?</p>
+
+  <div class="project-links">
+    <a href="mailto:izzynochill@gmail.com?subject=NES%20HD%20Testing" class="email-cta">
+      <img src="assets/Gmail_icon_(2020).svg" class="gmail-icon" alt="">
+      <span>Email to become a tester</span>
+    </a>
+  </div>
+
+  <div class="description">
+    <p>NES HD is a mobile-friendly NES emulator for Android powered by the Mesen emulation core. Browse your game library, play fullscreen, and use high-resolution texture packs for a refreshed visual experience.</p>
+    <p><strong>No games, BIOS files, or commercial artwork are included.</strong> You must provide your own legally obtained game files and, for Famicom Disk System games, a compatible FDS BIOS.</p>
+  </div>
+
+  <div class="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>NES, Famicom Disk System (FDS), UNIF, NSF, and NSFe file support</li>
+      <li>High-resolution texture pack support</li>
+      <li>ROM library scanning with list and cover-grid views</li>
+      <li>Downloadable cover art for North American, Japanese, and FDS games</li>
+      <li>On-screen controls plus physical controller and keyboard input</li>
+      <li>Multiple video filters and aspect ratios</li>
+      <li>Save states with preview images and battery-backed saves</li>
+      <li>Built-in Cheat Manager with an offline cheat database</li>
+      <li>Light and dark themes</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Device Requirements</h2>
+    <ul>
+      <li>Android 8.0 or newer (API 26+)</li>
+      <li>64-bit ARM (arm64-v8a) or x86-64 (x86_64) device</li>
+      <li>OpenGL ES 3.0-capable GPU</li>
+      <li>Your own legally obtained game files</li>
+      <li>A compatible FDS BIOS for Famicom Disk System games</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Getting Started</h2>
+    <ol>
+      <li>Tap the add button to open one game or scan a ROM folder.</li>
+      <li>Select a game from the library to start playing.</li>
+      <li>Open the settings drawer to choose a video filter, aspect ratio, or FDS BIOS.</li>
+      <li>Use the in-game menu to save or load a state and manage FDS disks when applicable.</li>
+    </ol>
+  </div>
+
+  <div class="features">
+    <h2>Cheat Manager</h2>
+    <p>Press and hold a supported game in the library, choose <strong>Cheat Manager</strong>, and enable or disable individual cheats. Selections are stored separately for each game and applied the next time it starts. Modified ROMs and some regional or revision variants may not match the included offline database.</p>
+  </div>
+
+  <div class="features">
+    <h2>License &amp; Credits</h2>
+    <p>NES HD includes code derived from Mesen, originally copyright &copy; 2014&ndash;2025 Sour, and is distributed under the GNU General Public License v3.0. It is provided without warranty, as described by the license.</p>
+    <div class="project-links">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener noreferrer" class="btn btn-neon-pink">View License (GPL-3.0)</a>
+      <a href="https://github.com/SourMesen/Mesen2" target="_blank" rel="noopener noreferrer" class="btn btn-neon-pink">Upstream Mesen</a>
+      <a href="neshd-privacy.html" class="btn btn-neon-pink">Privacy Policy</a>
+    </div>
+  </div>
+
+  <footer class="project-footer">
+    <p>&copy; 2026 NES HD. Licensed under GPL-3.0.</p>
+    <p class="disclaimer">No games, BIOS files, or commercial artwork are included. NES HD is not affiliated with or endorsed by Nintendo. Nintendo, NES, and Famicom are trademarks of their respective owners.</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+<script src="starfield.js"></script>
+</body>
+</html>
