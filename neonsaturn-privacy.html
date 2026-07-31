@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - NEON SATURN</title>
+<meta name="description" content="Privacy Policy for the NEON SATURN Android application.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-off">
+<canvas id="starfield"></canvas>
+
+<div class="crt-toggle">
+  <label>
+    <input type="checkbox" id="crtSwitch">
+    <span></span>
+    <span>CRT Mode</span>
+  </label>
+</div>
+
+<header class="navbar">
+  <a href="neonsaturn.html" class="back">&#10094; Back</a>
+</header>
+
+<main class="project-page">
+  <h1>Privacy Policy for NEON SATURN</h1>
+  <p class="subtitle">Last updated: July 30, 2026</p>
+
+  <div class="description">
+    <h2>Introduction</h2>
+    <p>NEON SATURN ("we," "our," or "us") is an Android application for Sega Saturn emulation powered by the Ymir emulation core (the "Service"). This Privacy Policy explains what information the Service accesses, stores, and shares.</p>
+
+    <h2>Information We Do Not Collect</h2>
+    <p>NEON SATURN is designed to run locally on your device. We do not operate an account or analytics service, and we do not intentionally collect:</p>
+    <ul>
+      <li>Names, email addresses, or other personal identification information</li>
+      <li>Contact lists or precise location data</li>
+      <li>Advertising identifiers</li>
+      <li>Usage analytics, telemetry, or device identifiers for profiling</li>
+      <li>Your disc images, BIOS files, save data, or emulator state</li>
+    </ul>
+
+    <h2>Information Stored or Accessed Locally</h2>
+    <p>To provide emulator functionality, NEON SATURN may store or access the following on your device:</p>
+    <ul>
+      <li>App preferences, emulator settings, themes, and touch control layouts</li>
+      <li>Game library metadata, including game names and file locations</li>
+      <li>Game folders and files you explicitly choose through Android file-selection flows</li>
+      <li>A Saturn BIOS (IPL) ROM, and optionally a CD block ROM, that you explicitly import</li>
+      <li>Copies of games staged into the app's own storage so they can be launched</li>
+      <li>Save states, internal backup RAM saves, and persistent Saturn clock and BIOS settings</li>
+      <li>Downloaded cover art</li>
+    </ul>
+
+    <h2>Permissions and File Access</h2>
+    <p>NEON SATURN uses Android's Storage Access Framework so you can import a BIOS ROM and select the folder holding your disc images. Access is governed by the files and folders you select; the app does not request broad storage permissions. Selected games are copied into the app's own storage before launch so the emulator can open them as ordinary files. NEON SATURN does not upload your selected game or BIOS files.</p>
+
+    <h2>Network Use and Third-Party Services</h2>
+    <p>Core emulation works entirely offline. NEON SATURN uses internet access only to download game cover artwork from a repository hosted on GitHub, either on demand while browsing your library or in bulk when you choose to download all covers. The requested artwork path can identify a game title or region. GitHub may also receive standard connection information such as your IP address and user agent. Review <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub's Privacy Statement</a> for details.</p>
+    <p>The app does not send disc images, BIOS files, save data, or emulator state to the cover-art service.</p>
+
+    <h2>Data Sharing and Sale</h2>
+    <p>We do not sell or share your personal data. NEON SATURN does not operate a remote account or cloud-save backend. Standard network information is processed by GitHub only when it serves optional cover-art files, as described above.</p>
+
+    <h2>Data Retention and Deletion</h2>
+    <p>App data, staged games, save states, and cached artwork are stored locally on your device. You can remove them by clearing NEON SATURN's storage or uninstalling the app through Android system settings. Cover art can also be cleared from within the app's settings. Files you placed outside the app's storage, such as your original disc images, may need to be deleted separately using your device's file manager.</p>
+
+    <h2>Device Backups</h2>
+    <p>Depending on your Android device and backup settings, Android may include eligible NEON SATURN app data in a system backup managed by your device or backup provider. You can manage or disable device backups in Android settings. NEON SATURN does not operate its own backup or cloud-sync service.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>The Service is not directed to children under 13, and we do not knowingly collect personal information from children under 13.</p>
+
+    <h2>Security</h2>
+    <p>Because NEON SATURN primarily stores data locally, its security depends on your device and the storage locations you select. Keep your device updated, use its available security features, and only install game files and BIOS ROMs from sources you trust.</p>
+
+    <h2>No Games Included / Legal Notice</h2>
+    <p>NEON SATURN does not include games, disc images, BIOS files, or commercial artwork. Only use content you are legally permitted to use. NEON SATURN is not affiliated with or endorsed by Sega.</p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page and reflected in the "Last updated" date.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions or requests, email <a href="mailto:izzynochill@gmail.com">izzynochill@gmail.com</a> <a href="mailto:izzynochill@gmail.com?subject=NEON%20SATURN%20Privacy" class="email-icon-simple" aria-label="Email about NEON SATURN privacy"><img src="assets/Gmail_icon_(2020).svg" alt="" style="width: 20px; height: 20px; vertical-align: middle;"></a>.</p>
+
+    <p class="disclaimer">This privacy policy is provided to support Google Play policy requirements.</p>
+  </div>
+</main>
+
+<script src="script.js"></script>
+<script src="starfield.js"></script>
+</body>
+</html>
