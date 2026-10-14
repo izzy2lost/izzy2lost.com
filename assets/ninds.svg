@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- NinDS: the app's adaptive launcher icon (an open dual-screen handheld on red),
+       cropped to the launcher's visible 72dp of the 108dp canvas. -->
+  <defs>
+    <linearGradient id="ninds-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D93232"/>
+      <stop offset="1" stop-color="#B02020"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#ninds-bg)"/>
+  <g transform="scale(4.16667) translate(-18 -18)">
+    <path fill="#F5F5F7" d="M39,27h30a4,4 0 0 1 4,4v18a4,4 0 0 1 -4,4h-30a4,4 0 0 1 -4,-4v-18a4,4 0 0 1 4,-4z"/>
+    <path fill="#F5F5F7" d="M39,55h30a4,4 0 0 1 4,4v18a4,4 0 0 1 -4,4h-30a4,4 0 0 1 -4,-4v-18a4,4 0 0 1 4,-4z"/>
+    <path fill="#C9CBD1" d="M37,53h34v2h-34z"/>
+    <path fill="#20232A" d="M39,31h30v18h-30z"/>
+    <path fill="#20232A" d="M44,59h20v15h-20z"/>
+    <path fill="#FFFFFF" fill-opacity="0.24" d="M39,31h30v5.5l-30,7z"/>
+    <path fill="#FFFFFF" fill-opacity="0.24" d="M44,59h20v4.5l-20,5z"/>
+    <path fill="#5A5E68" d="M38.8,62h1.4v5h-1.4zM37,63.8h5v1.4h-5z"/>
+    <path fill="#5A5E68" d="M68.5,61.7a0.9,0.9 0 1 1 0,1.8a0.9,0.9 0 1 1 0,-1.8zM68.5,65.5a0.9,0.9 0 1 1 0,1.8a0.9,0.9 0 1 1 0,-1.8zM66.6,63.6a0.9,0.9 0 1 1 0,1.8a0.9,0.9 0 1 1 0,-1.8zM70.4,63.6a0.9,0.9 0 1 1 0,1.8a0.9,0.9 0 1 1 0,-1.8z"/>
+  </g>
+</svg>

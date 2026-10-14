@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NinDS · izzy2lost</title>
+<meta name="description" content="NinDS is a Nintendo DS emulator for Android powered by DSperate, with high-resolution 3D, a box-art library and on-screen touch controls. Testers needed.">
+<link rel="icon" type="image/svg+xml" href="assets/ninds.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-off">
+<canvas id="starfield"></canvas>
+
+<div class="crt-toggle">
+  <label>
+    <input type="checkbox" id="crtSwitch">
+    <span></span>
+    <span>CRT Mode</span>
+  </label>
+</div>
+
+<header class="navbar">
+  <a href="index.html" class="back">&#10094; Back</a>
+</header>
+
+<main class="project-page">
+  <img src="assets/ninds.svg" class="project-icon-large" alt="NinDS icon">
+  <h1>NinDS</h1>
+  <p class="subtitle">Nintendo DS emulator for Android, powered by DSperate</p>
+  <div class="coming-soon">Testers needed</div>
+  <p class="testers-needed">Want to help test NinDS on your Android device?</p>
+
+  <div class="project-links">
+    <a href="mailto:izzynochill@gmail.com?subject=NinDS%20Testing" class="email-cta">
+      <img src="assets/Gmail_icon_(2020).svg" class="gmail-icon" alt="">
+      <span>Email to become a tester</span>
+    </a>
+  </div>
+
+  <div class="description">
+    <p>NinDS is a fast Nintendo DS emulator for Android built on the DSperate core, which pairs an ARM64 recompiler with melonDS-accurate emulation. Point it at a folder of games to build a library with box art, then play with on-screen touch controls, the touchscreen as the DS's bottom screen, or a physical gamepad.</p>
+    <p><strong>No games, BIOS files, firmware, or commercial artwork are included.</strong> Games start without any BIOS dumps thanks to the built-in FreeBIOS; your own legally obtained BIOS and firmware dumps are optional and unlock the DS system menu.</p>
+  </div>
+
+  <div class="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>.nds and zipped game support, read straight from the folder you choose</li>
+      <li>Game library with an icon view and a box-art view, with art downloaded on demand and kept on device</li>
+      <li>ARM64 recompiler (JIT) for full speed on modern phones</li>
+      <li>GPU 3D through Vulkan, with up to 8x internal resolution, anti-aliasing and smooth textures</li>
+      <li>Screen filters: sharp, smooth, sharp bilinear, LCD grid and xBRZ upscaling</li>
+      <li>Stacked, side-by-side, hybrid and single-screen layouts, separately for portrait and landscape</li>
+      <li>Save states with thumbnails, plus an automatic resume slot</li>
+      <li>Fast forward and frameskip</li>
+      <li>Action Replay cheats, typed in or picked from a usrcheat.dat database</li>
+      <li>Online play through Wiimmfi (optional)</li>
+      <li>On-screen controls with haptics, plus gamepad and keyboard mapping</li>
+      <li>Light and dark themes</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Device Requirements</h2>
+    <ul>
+      <li>Android 9.0 or newer (API 28+)</li>
+      <li>64-bit ARM (arm64-v8a) device</li>
+      <li>OpenGL ES 3.0 GPU; Vulkan 1.1 for GPU 3D and high-resolution 3D</li>
+      <li>Your own legally obtained game files</li>
+      <li>Optional: your own DS BIOS and firmware dumps for the system menu</li>
+    </ul>
+  </div>
+
+  <div class="features">
+    <h2>Getting Started</h2>
+    <ol>
+      <li>Choose the folder holding your Nintendo DS games.</li>
+      <li>Tap a game in the library to play it. Long-press it to resume, or to import and export its save.</li>
+      <li>Tap the box-art button in the toolbar to switch the library to covers.</li>
+      <li>Open Settings to turn on GPU 3D and pick an internal resolution, or adjust layouts and controls.</li>
+      <li>Press Back, or the Home/Guide button on a gamepad, for the in-game menu with save states, cheats and layouts.</li>
+    </ol>
+  </div>
+
+  <div class="features">
+    <h2>A Note on High-Resolution 3D</h2>
+    <p>With GPU 3D on, NinDS draws the DS's 3D scenes at up to eight times the original resolution, then composites them with the 2D layers so menus and sprites stay pixel-exact. Higher resolutions need a stronger GPU: 4x runs at full speed on most recent phones, while 8x is best kept for flagship devices.</p>
+  </div>
+
+  <div class="features">
+    <h2>License &amp; Credits</h2>
+    <p>NinDS is an Android port of DSperate by Noxwell (beebono), and is distributed under the GNU General Public License v3.0. It is provided without warranty, as described by the license. DSperate is verified against melonDS and reimplements DraStic's techniques in clean-room fashion. FreeBIOS is by Gilead Kutnick. The 6x xBRZ upscaling shader is derived from Kronos and Yabause and is used under GPL-2.0-or-later. Box art and titles come from GameTDB.</p>
+    <div class="project-links">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener noreferrer" class="btn btn-neon-pink">View License (GPL-3.0)</a>
+      <a href="https://github.com/izzy2lost/DSperate" target="_blank" rel="noopener noreferrer" class="btn btn-neon-pink">Source Code</a>
+      <a href="https://github.com/beebono/DSperate" target="_blank" rel="noopener noreferrer" class="btn btn-neon-pink">Upstream DSperate</a>
+      <a href="ninds-privacy.html" class="btn btn-neon-pink">Privacy Policy</a>
+    </div>
+  </div>
+
+  <footer class="project-footer">
+    <p>&copy; 2026 NinDS. Licensed under GPL-3.0.</p>
+    <p class="disclaimer">No games, BIOS files, firmware, or commercial artwork are included. NinDS is not affiliated with or endorsed by Nintendo. Nintendo DS and Nintendo DSi are trademarks of Nintendo.</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+<script src="starfield.js"></script>
+</body>
+</html>
